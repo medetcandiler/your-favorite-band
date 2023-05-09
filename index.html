@@ -17,7 +17,7 @@
 
   <body>
     <!-- Header -->
-    <header id="header" class="container mx-auto flex items-center justify-between px-6">
+    <header id="header" class="relative h-24 container mx-auto flex items-center justify-between px-6">
       <!-- Logo -->
       <div class="logo cursor-pointer">
         <a href="#">
@@ -33,7 +33,7 @@
       <nav class="hidden font-medium text-sm space-x-5 block md:block mr-5">
         <a class="scroll-link" href="#bio">BIOGRAPHY</a>
         <a class="scroll-link" href="#albums">ALBUMS</a>
-        <a class="scroll-link" href="#form">COMMENTS</a>
+        <a class="scroll-link" href="#comment">COMMENTS</a>
         <a
           href="#donate-btns"
           class="text-gray-900 scroll-link cursor-pointer hover:text-white border border-gray-800 hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
@@ -43,6 +43,7 @@
       </nav>
       <!-- hamburger menu icon -->
       <div
+        id="toggle"
         class="block hamburger  cursor-pointer md:hidden"
         onclick="myFunction(this)"
       >
@@ -51,6 +52,20 @@
         <div class="bar3"></div>
       </div>
     </header>
+
+    <section id="hamburger-menu" class="hidden absolute top-24 w-full bg-white py-5">
+      <div class="flex flex-col font-medium text-sm space-y-6 items-center justify-center mr-5">
+        <a class="scroll-link" href="#bio">BIOGRAPHY</a>
+        <a class="scroll-link" href="#albums">ALBUMS</a>
+        <a class="scroll-link" href="#comment">COMMENTS</a>
+        <a
+          href="#donate-btns"
+          class="text-gray-900 scroll-link cursor-pointer hover:text-white border border-gray-800 hover:bg-gray-900 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        >
+          DONATE
+      </a>
+      </div>
+    </section>
 
     <!-- Hero section -->
     <section class="container mx-auto mb-7">
@@ -187,7 +202,7 @@
     </section>
 
     <!-- Comment section -->
-    <section class="comment container flex mx-auto flex-col items-center justify-center">
+    <section id="comment" class="comment container flex mx-auto flex-col items-center justify-center">
       <h1 class="text-3xl mb-12 text-center">
         Send your dear comments to the The Beatles Forum
       </h1>

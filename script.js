@@ -36,8 +36,10 @@ customDonateForm.addEventListener('submit', e => {
   e.preventDefault();
   if( isNaN(custom.value)){
     custom.classList.add('bg-red-900')
+    custom.classList.remove('bg-green-700')
   } else{
     custom.classList.remove('bg-red-900')
+    custom.classList.add('bg-green-700')
     total.textContent = custom.value + '$'
   }
   custom.value = ''
@@ -51,6 +53,14 @@ buttons.forEach( button => {
   })
 })
 
+
+// toggling of hamburger menu
+const toggleBtn = document.querySelector('#toggle');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
+
+toggle.addEventListener('click', e =>{
+  hamburgerMenu.classList.toggle('hidden')
+})
 
 // smooth scroling 
 document.querySelectorAll('.scroll-link').forEach(link => {
