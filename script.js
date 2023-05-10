@@ -59,7 +59,8 @@ const toggleBtn = document.querySelector('#toggle');
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 
 toggle.addEventListener('click', e =>{
-  hamburgerMenu.classList.toggle('hidden')
+  console.log('clicked')
+  hamburgerMenu.classList.toggle('top-24');
 })
 
 // smooth scroling 
