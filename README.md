@@ -5,7 +5,7 @@ A web page dedicated to my favorite band, The Beatles. This project is built usi
 
 ## Live Demo
 
-Check out the live demo of the project: [The Beatles Fan Page](https://medetcandiler.github.io/your-favorite-band/)
+Check out the live demo of the project: [The Beatles Fan Page](https://your-favorite-band.vercel.app/)
 
 ## Features
 
