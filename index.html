@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -14,18 +13,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-  <!-- Header -->
   <header id="header" class="relative h-24 container mx-auto flex items-center justify-between px-6">
-    <!-- Logo -->
     <div class="logo cursor-pointer">
-      <a href="#">
         <img width="100" height="100" src="https://logowik.com/content/uploads/images/the-beatles9241.jpg"
           alt="the beatles logo" />
-      </a>
     </div>
-    <!-- nav -->
     <nav class="hidden font-medium text-sm space-x-5 block md:block mr-5">
       <a class="scroll-link" href="#bio">BIOGRAPHY</a>
       <a class="scroll-link" href="#albums">ALBUMS</a>
@@ -35,15 +28,12 @@
         DONATE
       </a>
     </nav>
-    <!-- hamburger menu icon -->
-    <div id="toggle" class="block hamburger  cursor-pointer md:hidden" onclick="myFunction(this)">
+    <div id="toggle" class="block hamburger mb-3 cursor-pointer md:hidden" onclick="myFunction(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
   </header>
-
-  <!-- hamburger-menu -->
   <section id="hamburger-menu" class="absolute -top-60 w-full bg-white py-5 md:hidden">
     <div class="flex flex-col font-medium text-sm space-y-6 items-center justify-center mr-5">
       <a class="scroll-link" href="#bio">BIOGRAPHY</a>
@@ -55,16 +45,12 @@
       </a>
     </div>
   </section>
-
-  <!-- Hero section -->
-  <section class="container mx-auto mb-7">
-    <img class="object-cover" src="./images/hero.jpg" />
+  <section class="container mx-auto py-12 md:py-0">
+    <img class="md:-mt-5" src="./images/hero.jpg" />
   </section>
-
-  <!-- biography section -->
   <section
-    class="container mx-auto flex flex-col justify-center items-center md:flex-row py-12 px-10 md:justify-between md:space-x-10 md:items-center my-12">
-    <div id="bio" class="bio-text w-1/2 py-12 leading-relaxed space-y-5 text-center md:text-start">
+    class="container mx-auto flex flex-col justify-center items-center md:flex-row  px-10 md:justify-between md:space-x-10 md:items-center my-12">
+    <div id="bio" class="bio-text  py-12 leading-relaxed space-y-5 text-center md:text-start md:w-1/2">
       <h1 class="text-4xl font-black text-center">The Biography</h1>
       <p>
         The Beatles were a British rock band formed in Liverpool in 1960. The
@@ -101,8 +87,6 @@
       </figure>
     </div>
   </section>
-
-  <!-- Best albums  -->
   <section id="albums" class="container mx-auto">
     <h1 class="text-3xl text-center font-bold">The Best Four Beatles Songs of All Time</h1>
     <div class=" flex flex-col items-center my-20 space-y-10 px-10 lg:space-x-10 lg:flex-row lg:space-y-0 lg:items-start">
@@ -182,14 +166,9 @@
           </audio>
         </div>
       </div>
-
-
-
     </div>
   </section>
-
-  <!-- Comment section -->
-  <section id="comment" class="comment container flex mx-auto flex-col items-center justify-center">
+  <section id="comment" class="comment container flex mx-auto flex-col items-center justify-center px-5 md:px-0">
     <h1 class="text-3xl mb-12 text-center">
       Send your dear comments to the The Beatles Forum
     </h1>
@@ -206,9 +185,6 @@
       <h1 class="text-xl font-semibold text-center">All comments</h1>
     </ul>
   </section>
-
-
-  <!-- Donate section -->
   <section id="donate" class="container mx-auto flex flex-col items-center space-y-12 my-20">
     <h1 class="text-3xl text-center">Donate to The Beatles Community</h1>
     <div id="donate-btns" class=" flex flex-col md:flex-row">
@@ -225,14 +201,11 @@
           class="text-gray-900 text-center bg-slate-500 text-white border border-gray-300 focus:outline-none  focus:ring-4 hover:opacity-75 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2">
       </form>
     </div>
-    <div class="show w-96 text-center">
+    <div class="show w-96 text-center px-5 md:px-0">
       <p>Total of <span id="total" class="font-bold">___</span> has been donated to the community. Thanks a bunch for
         your generous donation. </p>
     </div>
   </section>
-
-
-  <!-- footer -->
   <footer style="background-color: #F7F6E2;">
     <div class="flex flex-col items-center justify-around py-16 px-20 md:flex-row">
       <div class="left">
